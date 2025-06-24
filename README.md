@@ -1,37 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BackForge
 
-## Getting Started
+## 🎭 Project: "Smart" RP Sheet Generator for GTA RP
 
-First, run the development server:
+### 🧩 Goal  
+BackForge is a web app designed to create, enrich, and manage consistent, typed RP backgrounds for GTA RP characters. It leverages a local AI (with optional API) to generate rich, detailed profiles tailored to selected archetypes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Guided Character Creation**  
+  Typed fields (name, age, origin, job, personality traits) with automatic validation (Zod).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Background Generation**  
+  Provide a few details (e.g., "mechanic's son from Sandy Shores"), the AI crafts a coherent backstory.  
+  Partial regeneration possible (e.g., "redo his criminal past").
 
-## Learn More
+- **AI-Enriched Profiles**  
+  Generates RP goals, hidden flaws, potential relationships based on archetypes.
 
-To learn more about Next.js, take a look at the following resources:
+- **Local AI Model**  
+  Integration with Ollama (Mistral, LLaMA3) for local inference, with optional API fallback.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Export & Import**  
+  Export sheets as `.json`, `.pdf`, `.md` — fully typed.  
+  Local storage and easy reimport supported.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Tag / Archetype System**  
+  Influences generation (e.g., "criminal," "traumatized," "loyal"), affecting tone and content.
 
-## Deploy on Vercel
+- **Manual Editor & History**  
+  All changes tracked with typed snapshots, allowing rollback.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **"Storyteller Helper" Mode**  
+  AI suggests plot twists and potential conflicts between characters.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# backforge
+---
+
